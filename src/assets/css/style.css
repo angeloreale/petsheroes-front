@@ -5,17 +5,24 @@
  *
  * Made By MaterializeCSS.com
  */
+ .section .container{
+   min-height: 600px;
+   min-width: 100%;
+   position: relative;
+   text-align: center;
+ }
+ .section form{
+  background: #17a68c;
+  margin: 0 auto;
+  padding: 10px 20px;
+  min-height: 150px;
+  min-width: 70%;
+  display: inline-block;
+}
  .pets{
-  padding-top: 150px;
+  padding-top: 100px;
  }
- .form-banner{
-   background: #17a68c;
-   margin: 0 auto;
-   padding-bottom: 10px;
-   margin-bottom: 10%;
-   min-height: 350px;
-   min-width: 50%;
- }
+ 
  .forms{
   min-height: 650px;
   padding-bottom: 20px;
