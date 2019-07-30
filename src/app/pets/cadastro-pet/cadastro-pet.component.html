@@ -1,0 +1,66 @@
+<section class="forms">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6 offset-m3">
+        
+        
+      <div class="card-panel z-depth-5">
+      <h4 class="center"> Material sign up form</h4>	 
+  <div class="row">
+      <form>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nomePet" [(ngModel)]="pet.nomePet">
+          <div class="row">
+              <div class="input-field col s12 m4" >
+              <label for="idade">Idade:</label>
+              <input type="text" id="idade" name="idade" [(ngModel)]="pet.idade">
+              </div>
+              <div class="input-field col s6 m4" >
+              <label for="meses">
+                  <input class="with-gap" name="compIdade" id="meses" value="meses" type="radio" [(ngModel)]="pet.compIdade" />
+                  <span>Meses</span>
+              </label>
+              </div>
+              <div class="input-field col s6 m4" >
+              <label for="anos">
+                  <input class="with-gap" name="compIdade" id="anos" value="anos" type="radio" [(ngModel)]="pet.compIdade" />
+                  <span>Anos</span>
+              </label>
+            </div>
+          </div>
+          <label for="porte">Porte:</label>
+          <input type="text" id="porte" name="porte" [(ngModel)]="pet.porte">
+          
+      <div class="row">
+          <div class="input-field col s12 m6" >
+              <select class="browser-default">
+                <option value="" >Choose your option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+            </div>
+            <div class="input-field col s12 m6">
+                <select class="browser-default">
+                  <option value="">Choose your option</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+              </div>
+            </div> 
+      <br /> <br />
+      <div class="row center">  
+      <button (click)="cadastrarPet()"  class="btn-large waves-effect waves-light orange">Cadastrar</button>
+      </div>
+      </form>
+      <div><p> {{ mensagem }} </p></div>
+     
+  </div><!--row-->
+  </div><!--card-->
+  
+  
+  </div><!--col-->
+    </div><!--row-->
+    </div><!--conatiner-->
+    </section>

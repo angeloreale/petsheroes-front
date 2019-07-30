@@ -1,0 +1,29 @@
+<section class="forms">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6 offset-m3">
+        
+        
+      <div class="card-panel z-depth-5">
+      <h4 class="center">Login</h4>	 
+  <div class="row">
+      <form>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="emailUser" [(ngModel)]="userLogin.emailUser">
+          <label for="senha">Senha:</label>
+          <input type="text" id="senha" name="senha" [(ngModel)]="userLogin.senha">
+        <br /> <br />
+      <div class="row center">  
+      <button (click)="fazerLogin()" class="btn-large waves-effect waves-light orange">Entrar</button>
+      </div>
+      </form>
+      <div><p> {{ mensagem }} </p></div>
+     
+  </div><!--row-->
+  </div><!--card-->
+  
+  
+  </div><!--col-->
+    </div><!--row-->
+    </div><!--conatiner-->
+    </section>

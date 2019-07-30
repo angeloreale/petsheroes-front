@@ -1,14 +1,32 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>PetsheroesFront</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Pet's Heroes</title>
   <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.png"> 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rammetto+One&display=swap" rel="stylesheet">
+  <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
   <app-root></app-root>
+   <!--  Scripts-->
+   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script src="assets/js/materialize.js"></script>
+   <script src="assets/js/init.js"></script>
+   <script>
+      $(document).ready(function(){
+      $('select').formSelect();
+     });
+    </script>
+    <script>
+       $('.dropdown-button').dropdown({
+       container: document.body
+       });
+    </script>
 </body>
 </html>
