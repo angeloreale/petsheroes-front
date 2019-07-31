@@ -24,7 +24,13 @@
 <div id="cadastro">
     <h3>Cadastro de usuário</h3>
     <p>
-    A formulário de cadastro de usuário está disponível em usuarios/formcadastro, é necessário implementar todos os campos disponíveis para cadastro na api e através do service enviar esses dados para a api, redirecionando o usuario para a tela de login caso o cadastro seja efetuado com sucesso ou exibindo a mensagem de erro no formulário em caso de falha.
+    O formulário de cadastro de usuário está disponível em usuarios/formcadastro, é necessário implementar todos os campos disponíveis para cadastro na api e através do usuariosservice enviar esses dados para a api, redirecionando o usuario para a tela de login caso o cadastro seja efetuado com sucesso ou exibindo a mensagem de erro no formulário em caso de falha.
+    </p>    
+</div>
+<div id="login">
+    <h3>Login</h3>
+    <p>
+    O formulário de login está disponível em usuarios/formlogin, é necessário implementar todos os campos necessários e através do authservice enviar esses dados para a api, redirecionando o usuario para a tela de dashboard(passando o id do usuario como parametro) caso o login seja efetuado com sucesso ou exibindo a mensagem de erro no formulário em caso de falha.
     </p>    
 </div>
 <h2>Passo a passo de como contribuir com o projeto</h2>
