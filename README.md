@@ -14,4 +14,7 @@
 <li><a href=""></a></li>
 </ul>
 
+<h2>Passo a passo de como contribuir com o projeto</h2>
+<a href="https://github.com/CodeSolidario/petsheroes-front/blob/master/CONTRIBUITION.md"> CONTRIBUITION.md </a>
+
 
