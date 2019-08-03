@@ -41,6 +41,7 @@ const HomeSingleton = {
   loadCities: function(state) {
     let cities_el = document.querySelector(".home__c__w__form__cidade__select")
     let cities_firstoption = document.querySelector(".home__c__w__form__cidade__select option");
+    cities_el.disabled = true;
     cities_firstoption.innerHTML = "Carregando...";
     fetch(`${window.location.protocol}//${window.location.hostname}:3000/api/consulta/cidades/${state}`)
     .then(res => {
