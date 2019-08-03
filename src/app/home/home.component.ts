@@ -27,15 +27,18 @@ const HomeSingleton = {
   },
   loadStates: function() {
     let states_el = document.querySelector(".home__c__w__form__estado__select");
-    states_el.innerHTML = `<option value="" disabled selected>Estado</option>`;
+    states_el.disabled = true;
+    states_el.innerHTML = `<option value="" disabled selected>Carregando...</option>`;
     fetch(`${window.location.protocol}//${window.location.hostname}:3000/api/consulta/cidades`)
       .then(res => {
         return res.json()
       })
       .then(states => {
+        states_el.innerHTML = `<option value="" disabled selected>Estado</option>`;
         states.forEach(st => {
           states_el.innerHTML += `<option value=${st.sigla}>${st.nome}</option>`
         })
+        states_el.disabled = false;
       });
   },
   loadCities: function(state) {
